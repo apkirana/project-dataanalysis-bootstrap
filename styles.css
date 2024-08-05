@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+}
+
+#gameContainer {
+    width: 500px;
+    height: 500px;
+    border: 2px solid #000;
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 20px;
+    overflow: hidden; /* Ensure the character doesn't go outside the container */
+}
+
+#character {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 225px;
+    left: 225px;
+}
+
+#collectible {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+#score {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#restartButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#instructions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#instructions h2 {
+    margin: 0 0 10px 0;
+}
+
+#instructions p, #instructions ul {
+    margin: 5px 0;
+}
+
+#instructions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#instructions ul li {
+    margin: 5px 0;
+}

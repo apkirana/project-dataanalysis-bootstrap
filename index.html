@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Dashboard</h3>
+            </div>
+            <ul class="list-unstyled components">
+                <li><a href="#overview" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Overview</a></li>
+                <li><a href="#sales" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Sales</a></li>
+                <li><a href="#customers" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Customers</a></li>
+                <li><a href="#products" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Products</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Page Content -->
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                    </button>
+                    <h4 class="ml-3">E-commerce Dashboard</h4>
+                </div>
+            </nav>
+            
+            <div class="container">
+                <!-- Placeholder for charts -->
+                <div class="chart-container" id="overviewChart"></div>
+                <div class="chart-container" id="salesChart"></div>
+                <div class="chart-container" id="customersChart"></div>
+                <div class="chart-container" id="productsChart"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
